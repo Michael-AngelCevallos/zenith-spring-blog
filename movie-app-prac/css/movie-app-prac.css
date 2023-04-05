@@ -1,0 +1,80 @@
+/*ID TAGS*/
+#buttons {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav {
+    box-shadow: 2px 4px 20px 4px #0B090A !important;
+    text-shadow: 2px 2px black;
+    background-size: cover;
+    : red;
+
+}
+
+#button-shadow {
+    box-shadow: 2px 4px 20px 4px #0B090A !important;
+}
+
+#display-movies {
+    box-shadow: 2px 4px 20px 4px #0B090A !important;
+}
+
+#windows-logo {
+    font-size: smaller;
+}
+
+
+/*CLASS TAGS*/
+.vista-logo {
+    height: 62px;
+    width: auto;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    background-image: url("../movies-app-zenith-main/images/windows-grass-field.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-blue {
+    background-color: #5e72e4 !important;
+}
+
+.del-item{
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.movie-card{
+    width: 300px;
+}
+
+.movies-box{
+    height: 372px;
+}
+
+.big-container {
+    color: white;
+    text-shadow: 2px 1px black;
+    box-shadow: 2px 4px 20px 4px #0B090A !important;
+}
+
+.change-box {
+    padding-bottom: 47px;
+}
+
+.poster {
+    height: 356px;
+}
+
+.loading-text {
+    color: white;
+    text-shadow: 2px 1px black;
+}

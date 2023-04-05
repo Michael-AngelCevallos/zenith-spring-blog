@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Coffee Project</title>
+    <link rel="stylesheet" href="prac-coffee-css.css" />
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+    />
+</head>
+<body>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+></script>
+
+<!-- Page wrapper start here -->
+<div class="wrapper">
+    <!-- page header starts here -->
+    <div class="header text-center shadow p-2 sticky-top bg-light">
+        <h1 class="fw-bold">Coffee!</h1>
+    </div>
+    <!-- page header ends here -->
+
+    <main class="container">
+        <!-- Page's only row starts here -->
+        <div class="row mt-3">
+            <!-- page's left column starts here -->
+            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12">
+                <table>
+                    <tbody class="d-flex flex-wrap" id="coffees"></tbody>
+                </table>
+            </div>
+            <!-- page's left column ends here -->
+
+            <!-- page's right column starts here -->
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <!-- section searching for coffee starts here -->
+                <form class="col-12">
+                    <label for="roast-selection"> Roast</label>
+                    <select class="col-12 rounded-1 p-2" id="roast-selection">
+                        <option>all</option>
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                    <label class="mt-2" for="search-coffee"> Coffee Name</label>
+                    <input
+                            class="form-control mb-3 p-2 border-dark rounded-1"
+                            type="text"
+                            placeholder="coffee name"
+                            aria-label="form-control-sm example"
+                            id="search-coffee"
+                    />
+                    <input
+                            class="btn btn-success col-12 rounded-1 fs-6"
+                            id="submit"
+                            type="submit"
+                    />
+                </form>
+                <hr />
+                <!-- section searching for coffee ends here -->
+                <div class="add-coffee text-center fw-bold fs-4">Add a Coffee</div>
+
+                <!-- section adding coffee starts here -->
+                <form class="col-12">
+                    <div class="mb-2">
+                        <label for="roast-add" class="form-label">Roast</label>
+                        <!-- <input class="col-12 rounded-1" class="p-0" type="text" class="form-control" id="exampleRoast" aria-describedby="Roast"> -->
+                        <select class="col-12 rounded-1 p-2" id="roast-add">
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="addName" class="form-label">Name</label>
+                        <input
+                                class="col-12 border-dark border rounded-1 p-2"
+                                type="text"
+                                class="form-control"
+                                id="addName"
+                                placeholder="type coffee name"
+                        />
+                    </div>
+                    <button
+                            class="btn btn-success col-12 rounded-1"
+                            type="submit"
+                            id="submitAdd"
+                    >
+                        Submit
+                    </button>
+                </form>
+                <!-- section adding coffee ends here -->
+            </div>
+            <!-- page's right column ends here -->
+        </div>
+        <!-- Page's only row ends here -->
+        <script src="prac-coffee-js.js"></script>
+    </main>
+</div>
+<!-- page wrapper ends here -->
+</body>
+</html>

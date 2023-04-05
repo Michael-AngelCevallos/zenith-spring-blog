@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies App</title>
+
+    <!-- CORE FIREBASE JS SDK AND DATABASE LIBRARY -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- KEYS SCRIPT JS -->
+    <script src="js/keys.js"></script>
+
+    <!-- FONT KIT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./css/movie-app-prac.css">
+
+</head>
+
+<body>
+
+<!-- PAGE WRAPPER -->
+<div class="page-wrapper">
+
+    <!-- NAV BAR -->
+    <nav class="navbar sticky-top mb-0 d-flex justify-content-start" style="background-color:#394dcd;" id="nav">
+        <img src="images/windows-vista-icon-logo-427D6813BD-seeklogo.com.png" class="vista-logo ps-5" alt="windows vista logo">
+        <h4 class="text-light ps-3"><i class="fas fa-film"></i>Windows Vista Movie's</h4>
+        <a class="text-light" href="#"><i class="fas fa-bell"></i><i class="far fa-user-circle"></i></a>
+    </nav>
+
+    <!-- DISPLAY MOVIES -->
+    <div class="container d-flex movie-box" id="display-movies">
+        <div class="row flex-grow-1 d-flex justify-content-evenly p-5" id="movies-here">
+            <h1 class="loading-text">Your Library is Loading...</h1>
+        </div>
+    </div>
+
+    <!--    BIG CONTAINER -->
+    <div class="container d-flex mt-5 pb-5 big-container">
+        <div class="row d-flex flex-grow-1">
+
+            <!-- UPDATE MOVIE BUTTON -->
+            <div class="col-6 change-box hidden mt-5">
+                <div class="row d-flex flex-column justify-content-around" id="buttons">
+                    <div class="d-flex flex-column justify-content-around" id="editMovie">
+                        <label for="newTitle">Change Title </label>
+                        <input type="text" id="newTitle" class="newTitle">
+                        <label for="newGenre">Change Genre </label>
+                        <input type="text" id="newGenre" class="newGenre">
+                        <label for="newYear">Change Year </label>
+                        <input type="text" id="newYear" class="newYear">
+                        <label for="newDirector">Change Director </label>
+                        <input type="text" id="newDirector" class="newDirector">
+                        <button class="mt-3" id="changeMovie">Update Movie</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADD MOVIE BUTTON-->
+
+            <div class="col-6 d-flex flex-column justify-content-around">
+                <div class="d-flex flex-column justify-content-around" id="postMovie">
+                    <label for="title">Title </label>
+                    <input type="text" id="title">
+                    <label for="genre">Genre </label>
+                    <input type="text" id="genre">
+                    <label for="year">Year </label>
+                    <input type="text" id="year">
+                    <label for="director">Director </label>
+                    <input type="text" id="director">
+                    <button class="mt-3" id="newMovie">Add Movie</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------ JQUERY ------->
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+        crossorigin="anonymous"></script>
+
+<!-- BOOTSTRAP SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+<!-- UTILITIES AND HIGHER LEVEL FUNCTIONS TO SIMPLIFY DATABASE FETCHES -->
+<script src="js/firebase-config.js"></script>
+
+<!-- MOVIES JS -->
+<script src="js/movies-api.js"></script>
+
+<!-- INDEX JS -->
+<script src="js/movie-app-prac.js"></script>
+
+</body>
+</html>
